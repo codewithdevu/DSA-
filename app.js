@@ -22,4 +22,43 @@
 
 // console.log ("me" - 1); // NaN
 
+// let age = Number(prompt("what is your age?")); // prompt is used to take input from user. it will return a string.
 
+// console.log("Your age is: " + age);
+// console.log(typeof age); // string
+
+// this is called type casting. we can use Number() to convert string to number. if the string is not a number then it will return NaN (Not a Number).
+
+// let a = 10;
+// let b = 20;
+// let c;
+
+// c = a; // c is now 10
+// a = b; // a is now 20
+// b = c; // b is now 10
+
+// console.log("The value of a is: " + a);
+// console.log("The value of b is: " + b);               
+
+// let a= 24;
+// let b = 6;
+
+// a =  a + b; // a is now 30
+// b = a - b; // b is now 24
+// a = a - b; // a is now 6
+// console.log("The value of a is: " + a);
+// console.log("The value of b is: " + b);
+
+// let a = 10;
+// let b = 20;
+
+// [a, b] = [b, a]; // destructuring assignment to swap values
+
+// console.log("The value of a is: " + a);
+// console.log("The value of b is: " + b);  
+
+let a = 13 ;
+let b = 2;
+
+console.log(Math.floor(a/b)); // division
+console.log(a%b); // modulus
