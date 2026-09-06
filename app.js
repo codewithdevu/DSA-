@@ -57,8 +57,77 @@
 // console.log("The value of a is: " + a);
 // console.log("The value of b is: " + b);  
 
-let a = 13 ;
-let b = 2;
+// let a = 13 ;
+// let b = 2;
 
-console.log(Math.floor(a/b)); // division
-console.log(a%b); // modulus
+// console.log(Math.floor(a/b)); // division
+// console.log(a%b); // modulus
+
+// let a = 4683;
+
+// console.log(Math.floor(a/10)); // 468
+// console.log(Math.floor(a/100)); // 46
+// console.log(Math.floor(a/1000)); // 4
+
+// it will help us to making a loop to get the digits of a number. we can use this method to get the digits of a number one by one. we can use this method to get the digits of a number in reverse order. we can use this method to get the digits of a number in normal order. we can use this method to get the digits of a number in any order. we can use this method to get the digits of a number in any base. we can use this method to get the digits of a number in any base and any order.
+
+// let a = 11 , b = 22;
+// let c = a + b + a++ + b++ + ++a + ++b; // 11 + 22 + 11 + 22 + 13 + 24 = 103
+// console.log("a=" + a);
+// console.log("b=" + b);
+// console.log("c=" + c);
+
+
+// Math functions
+
+// console.log(Math.round(4.5)); // 5
+// console.log(Math.ceil(4.1)); // 5
+// console.log(Math.floor(4.9)); // 4
+// console.log(Math.trunc(18.98)); // 18
+// console.log(Math.pow(2, 3)); // 8
+// console.log(Math.sqrt(16)); // 4
+// console.log(Math.cbrt(27)); // 3
+// console.log(Math.max(1, 2, 3, 4, 5)); // 5
+// console.log(Math.min(1, 2, 3, 4, 5)); // 1
+// console.log(Math.abs(-5)); // 5
+// console.log(Math.trunc(Math.random()*9000 + 1000)); // 1000 to 9999 random number
+
+
+// let = a = 10.094384534;
+
+// console.log(a.toFixed(2)); // 10.09
+// console.log(typeof a.toFixed(2)); // string
+
+// calculate the area and perimeter of a rectangle using Math functions
+
+// let length = 10;
+// let breadth = 5;
+
+// let area = length * breadth;
+// let perimeter = 2 * (length + breadth);
+
+// console.log("Area of rectangle is: " + area);
+// console.log("Perimeter of rectangle is: " + perimeter);
+
+// Generate OTP
+
+// console.log(Math.trunc(Math.random()*9000 + 1000)); // 1000 to 9999 random number
+
+// are of triangle using Heron's formula
+
+// let a = 5;
+// let b = 6;
+// let c = 7;  
+
+// let s = (a + b + c) / 2; // semi-perimeter
+
+// let area = Math.sqrt(s * (s - a) * (s - b) * (s - c)); // Heron's formula
+
+// console.log("Area of triangle is: " + area.toFixed(2));
+
+// circumference of circle
+
+// let radius = 6;
+
+// let circumference = 2 * Math.PI * radius;
+// console.log("Circumference of circle is: " + Number(circumference.toFixed(2)));
