@@ -131,3 +131,65 @@
 
 // let circumference = 2 * Math.PI * radius;
 // console.log("Circumference of circle is: " + Number(circumference.toFixed(2)));
+
+
+// valid user who vote or not
+
+// let age = Number(prompt("Enter your age: "));
+
+
+// if (isNaN(age)) {
+//     console.log("Please enter a valid number for age.");
+// } else if (age >= 18) {
+//     console.log("You are eligible to vote.");
+// } else {
+//     console.log("You are not eligible to vote.");
+// }
+
+// shop discount
+
+// let amount = Number(prompt("Enter the total amount: "));
+// let discount = 0;
+// if (isNaN(amount)) {
+//     console.log("Please enter a valid number for amount.");
+// } else {
+//     if(amount > 0 && amount <= 5000) {
+//         discount = 0;
+//     } else if(amount > 5000 && amount <= 7000) {
+//         discount = 5;
+//     } else if(amount > 7000 && amount <= 9000) {
+//         discount = 10;
+//     }else if (amount > 9000) {
+//         discount = 20;
+//     }
+// }
+
+// console.log(amount - Math.floor((discount*amount)/100)); // final amount after discount
+
+// bijli bill
+
+// let units = Number(prompt("Enter the number of units consumed: "));
+// let amount = 0;
+
+// if (isNaN(units)) {
+//     console.log("Please enter a valid number for units.");
+// }
+
+// if(units > 400) {
+//     amount = (units - 400) * 13;
+//     units = 400;
+// }
+
+// if(units>200 && units <= 400){
+//     amount += (units - 200) * 8;
+//     units = 200;
+// }
+
+// if(units>100 && units <= 200){
+//     amount += (units - 100) * 6;
+//     units = 100;
+// }
+
+// amount += units * 4; // for first 100 units
+
+// console.log("Total amount to be paid: " + amount);
