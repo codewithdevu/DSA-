@@ -193,3 +193,98 @@
 // amount += units * 4; // for first 100 units
 
 // console.log("Total amount to be paid: " + amount);
+
+// INR dinominations
+
+// let amount = Number(prompt("Enter the amount in INR: "));
+
+// if (isNaN(amount)) {
+//     console.log("Please enter a valid number for amount.");
+// } 
+// if (amount >= 500) {
+//     console.log("500 INR notes: " + Math.floor(amount / 500));
+//     amount = amount % 500;
+// }
+// if (amount >= 200) {
+//     console.log("200 INR notes: " + Math.floor(amount / 200));
+//     amount = amount % 200;
+// }
+// if (amount >= 100) {
+//     console.log("100 INR notes: " + Math.floor(amount / 100));
+//     amount = amount % 100;
+// }
+// if (amount >= 50) {
+//     console.log("50 INR notes: " + Math.floor(amount / 50));
+//     amount = amount % 50;
+// }
+// if (amount >= 20) { 
+//     console.log("20 INR notes: " + Math.floor(amount / 20));
+//     amount = amount % 20;
+// } 
+// if (amount >= 10) {
+//     console.log("10 INR notes: " + Math.floor(amount / 10));
+//     amount = amount % 10;
+// }
+// if (amount >= 5) {
+//     console.log("5 INR notes: " + Math.floor(amount / 5));
+//     amount = amount % 5;
+// } 
+// if (amount >= 2) {
+//     console.log("2 INR notes: " + Math.floor(amount / 2));
+//     amount = amount % 2;
+// }
+// if (amount === 1) {
+//     console.log("1 INR notes: " + amount);
+// }
+
+// ternary operator
+
+// 112 > 12 ? console.log("112 is greater than 12") : console.log("112 is not greater than 12");
+// console.log(112 > 12 ? "112 is greater than 12" : "112 is not greater than 12");
+
+// nested ternary operator
+
+// switch case 
+
+// let day = Number(prompt("Enter the day number (1-7): "));
+
+// switch (day) {
+//     case 1:
+//         console.log("Monday");
+//         break;
+//     case 2:
+//         console.log("Tuesday");
+//         break;
+//     case 3:
+//         console.log("Wednesday");
+//         break;
+//     case 4:
+//         console.log("Thursday");
+//         break;
+//     case 5:
+//         console.log("Friday");
+//         break;
+//     case 6:
+//         console.log("Saturday");
+//         break
+//     case 7:
+//         console.log("Sunday");
+//         break;
+//     default:
+//         console.log("Invalid day number. Please enter a number between 1 and 7.");
+// }
+
+// we use true in switch case when we want to use comparison operators in case statements. we can use if else statements instead of switch case but switch case is more readable and easier to understand.
+
+let num = (0.1 + 0.2).toFixed(1);
+
+switch (num) {
+    case "0.3":
+        console.log("num is equal to 0.3");
+        break;
+    default:
+        console.log("num is not equal to 0.3");
+        break;
+}
+
+// how to handle precision issues in floating point arithmetic in JavaScript. we can use toFixed() method to round the number to a fixed number of decimal places. we can also use Math.round() method to round the number to the nearest integer. we can also use Number.EPSILON to compare two floating point numbers for equality. we can also use a small tolerance value to compare two floating point numbers for equality.
