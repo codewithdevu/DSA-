@@ -276,15 +276,140 @@
 
 // we use true in switch case when we want to use comparison operators in case statements. we can use if else statements instead of switch case but switch case is more readable and easier to understand.
 
-let num = (0.1 + 0.2).toFixed(1);
+// let num = (0.1 + 0.2).toFixed(1);
 
-switch (num) {
-    case "0.3":
-        console.log("num is equal to 0.3");
-        break;
-    default:
-        console.log("num is not equal to 0.3");
-        break;
-}
+// switch (num) {
+//     case "0.3":
+//         console.log("num is equal to 0.3");
+//         break;
+//     default:
+//         console.log("num is not equal to 0.3");
+//         break;
+// }
 
 // how to handle precision issues in floating point arithmetic in JavaScript. we can use toFixed() method to round the number to a fixed number of decimal places. we can also use Math.round() method to round the number to the nearest integer. we can also use Number.EPSILON to compare two floating point numbers for equality. we can also use a small tolerance value to compare two floating point numbers for equality.
+
+
+// loop -> whatsapp , instagram , facebook , ecommerce , youtube etc.
+
+// 1 - 22
+
+// for (let i = 1; i <= 22; i++) {
+//     console.log(i);
+// } 
+
+// for(;;){
+//     console.log("This is an infinite loop. Press Ctrl + C to stop it.");
+// }
+
+// sum of n natural numbers 
+
+// let pr = prompt("Enter a number: ");
+
+// if (pr === null) {
+//     console.log("You cancelled the prompt.");
+// }
+// else {
+//     let ans = Number(pr);
+
+//     if (isNaN(ans)) {
+//         console.log("Please enter a valid number.");
+//     } else {
+//         if (ans < 0) {
+//             console.log("Please enter a positive number.");
+//         } else {
+//             let sum = 0;
+//             for (let i = 1; i <= ans; i++) {
+//                 sum += i;
+//             }
+//             console.log("Sum of first " + ans + " natural numbers is: " + sum);
+//         }
+//     }
+// }
+
+
+// factorial of n natural numbers 
+
+// let pr = prompt("Enter a number: ");
+
+// if (pr === null) {
+//     console.log("You cancelled the prompt.");
+// }
+// else {
+//     let ans = Number(pr);
+
+//     if (isNaN(ans)) {
+//         console.log("Please enter a valid number.");
+//     } else {
+//         if (ans < 0) {
+//             console.log("Please enter a positive number.");
+//         } else {
+//             let fact = 1;
+//             for (let i = 1; i <= ans; i++) {
+//                 fact *= i;
+//             }
+//             console.log("Factorial of " + ans + " is: " + fact);
+//         }
+//     }
+// }
+
+
+// optimized version of sum of n num using ternary operator
+
+// const pr = prompt("Enter a number: ");
+// const n = Number(pr?.trim());
+
+// console.log(
+//   pr === null ? "You cancelled the prompt." :
+//   !pr.trim() || isNaN(n) ? "Please enter a valid number." :
+//   n <= 0 || !Number.isInteger(n) ? "Please enter a positive whole number." :
+//   `Sum of first ${n} natural numbers is: ${(n * (n + 1)) / 2}`
+// );
+
+// let a = "Hello";
+
+// let changeType = Number(a); // converting string to number
+
+// console.log(changeType);
+
+// its showing NaN because "Hello" is not a number. when we try to convert a string that is not a number to a number, it will return NaN (Not a Number).
+
+
+// Factors of n number
+
+// const pr = prompt("Enter a number: ");
+// const n = Number(pr?.trim());
+
+// if (pr === null) console.log("You cancelled the prompt.");
+// else if (!pr.trim() || isNaN(n)) console.log("Please enter a valid number.");
+// else if (n <= 0 || !Number.isInteger(n)) console.log("Please enter a positive whole number.");
+// else {
+//     for (let i = 1; i <= Math.floor(n/2) ; i++) {
+//         if (n%i === 0) {
+//             console.log(i);
+//         }
+//     }
+//     console.log(n)
+// }
+
+// check the n number is prime or not
+
+
+// const pr = prompt("Enter a number: ");
+// const n = Number(pr?.trim());
+
+// if (pr === null) console.log("You cancelled the prompt.");
+// else if (!pr.trim() || isNaN(n)) console.log("Please enter a valid number.");
+// else if (n <= 0 || !Number.isInteger(n)) console.log("Please enter a positive whole number.");
+// else {
+//     let prime = true;
+//     for (let i = 2; i <= Math.floor(n/2) ; i++) {
+//         if (n%i === 0) {
+//             prime = false;
+//         }
+//     }
+//     console.log(prime)
+// }
+
+
+
