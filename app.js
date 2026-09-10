@@ -411,5 +411,105 @@
 //     console.log(prime)
 // }
 
+// using function 
+// 37 = squareroot by math.floor is 6 = if i = 3 then loop check 3,6
+// const pr = prompt("Enter a number: ");
+// const n = Number(pr?.trim());
+
+// if (pr === null) console.log("You cancelled the prompt.");
+// else if (!pr.trim() || isNaN(n)) console.log("Please enter a valid number.");
+// else if (n <= 0 || !Number.isInteger(n)) console.log("Please enter a positive whole number.");
+// else {
+//     console.log(isPrime(n))
+// }
+
+// function isPrime() {
+//     if(n<=1) return false;
+//     if(n==2) return true;
+//     if(n%2==0) return false;
+//     for(let i=3 ; i<Math.floor(Math.sqrt(n)); i+=2){
+//         if(n%i==0) return false;
+//     }
+//     return true;
+// }
+
+// sum  of digits using while loop 
+
+// const pr = prompt("Enter a number: ");
+// const n = Number(pr?.trim());
+
+// if (pr === null) console.log("You cancelled the prompt.");
+// else if (!pr.trim() || isNaN(n)) console.log("Please enter a valid number.");
+// else if (n <= 0 || !Number.isInteger(n)) console.log("Please enter a positive whole number.");
+// else {
+//     let n = Number(pr);
+//     if(n>0){
+//         let sum = 0;
+//         while(n>0){
+//             let rem = n%10; // 1234%10 = 4
+//             sum += rem;
+//             n = Math.floor(n/10); // 1234/10 = 123
+//         }
+//         console.log((sum))
+//     } 
+// }
+
+// reverse the digits using while 
+
+// const pr = prompt("Enter a number: ");
+// const n = Number(pr?.trim());
+
+// if (pr === null) console.log("You cancelled the prompt.");
+// else if (!pr.trim() || isNaN(n)) console.log("Please enter a valid number.");
+// else if (n <= 0 || !Number.isInteger(n)) console.log("Please enter a positive whole number.");
+// else {
+//     let n = Number(pr);
+//     if(n>0){
+//         let rev = 0;
+//         while(n>0){
+//             let rem = n%10; // 1234%10 = 4
+//             rev = rev*10 + rem
+//             n = Math.floor(n/10); // 1234/10 = 123
+//         }
+//         console.log((rev))
+//     } 
+// }
+
+// strong number using while loop 
+
+
+// const pr = prompt("Enter a number: ");
+// const n = Number(pr?.trim());
+
+// if (pr === null) console.log("You cancelled the prompt.");
+// else if (!pr.trim() || isNaN(n)) console.log("Please enter a valid number.");
+// else if (n <= 0 || !Number.isInteger(n)) console.log("Please enter a positive whole number.");
+// else {
+//     let n = Number(pr);
+//     if(n>0){
+//         let sum = 0;
+//         let copy = n;
+//         while(n>0){
+//             let rem = n%10; // 1234%10 = 4
+//             let fact = 1;
+//             for(let i = 1 ; i <=rem ; i++){
+//                 fact = fact*i;
+//             }
+//             sum += fact;
+//             n = Math.floor(n/10); // 1234/10 = 123
+//         }
+
+//         if(copy === sum) {
+//             console.log("strong number");
+//         } else {
+//             console.log(" not strong number");
+//         }
+        
+//     } 
+// }
+
+
+
+
 
 
