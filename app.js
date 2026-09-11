@@ -510,16 +510,16 @@
 
 // repeat hello
 
-do {
-    const pr = prompt("Enter 0 if you want to stop ");
-    var n = Number(pr);
-    if (pr === null) {
-        console.log("You cancelled the prompt.");
-    }
-    else{
-        console.log("hello")
-    }
-} while (n !== 0)
+// do {
+//     const pr = prompt("Enter 0 if you want to stop ");
+//     var n = Number(pr);
+//     if (pr === null) {
+//         console.log("You cancelled the prompt.");
+//     }
+//     else{
+//         console.log("hello")
+//     }
+// } while (n !== 0)
 
 
 
@@ -556,9 +556,9 @@ do {
 
 // guess the number 
 
-// // Generate an integer between 1 and 100
+// Generate an integer between 1 and 100
 // const random = Math.floor(Math.random() * 100) + 1;
-// // console.log("Target number :", random);
+// console.log("Target number :", random);
 
 // let attempts = 0;
 
@@ -590,10 +590,10 @@ do {
 //     console.log("Out of bounds! Enter a number between 1 and 100.");
 //     continue;
 //   }
-
+  
 //   attempts++;
 
-  // 5. Compare guess with target
+//   // 5. Compare guess with target
 //   if (guess > random) {
 //     console.log("Too high, try again!");
 //   } else if (guess < random) {
@@ -604,7 +604,43 @@ do {
 //   }
 // }
 
+// sasta calculator 
 
+let cont;
+
+do {
+  let pr = Number(
+    prompt(
+      "Enter what do you want to do: \n 1 for sum \n 2 for subtract \n 3 for multiply \n 4 for divide"
+    )
+  );
+
+  if (pr >= 1 && pr <= 4) {
+    let a = Number(prompt("Enter first number (a):"));
+    let b = Number(prompt("Enter second number (b):"));
+
+    if (pr === 1) {
+      console.log(`Result: ${a + b}`);
+    } else if (pr === 2) {
+      console.log(`Result: ${a - b}`);
+    } else if (pr === 3) {
+      console.log(`Result: ${a * b}`);
+    } else if (pr === 4) {
+      if (b === 0) {
+        console.log("Cannot divide by zero!");
+      } else {
+        console.log(`Result: ${a / b}`);
+      }
+    }
+  } else {
+    console.log("Invalid input! Please choose between 1 and 4.");
+  }
+
+  cont = prompt("Do you want to continue? Type 'yes':").toLowerCase();
+
+} while (cont === "yes");
+
+console.log("Calculator closed.");
 
 
 
