@@ -504,9 +504,107 @@
 //         } else {
 //             console.log(" not strong number");
 //         }
-        
+
 //     } 
 // }
+
+// repeat hello
+
+do {
+    const pr = prompt("Enter 0 if you want to stop ");
+    var n = Number(pr);
+    if (pr === null) {
+        console.log("You cancelled the prompt.");
+    }
+    else{
+        console.log("hello")
+    }
+} while (n !== 0)
+
+
+
+// optimized way
+
+// let input;
+
+// do {
+//     input = prompt("Enter 0 if you want to stop ");
+//     if (input === null) {
+//         console.log("You cancelled the prompt.");
+//         break;
+//     }
+//     const trimmed = input.trim();
+//     if (trimmed === "") {
+//         console.log("Empty input. Please enter a valid number.");
+//         continue;
+//     }
+
+//     const n = Number(trimmed);
+//     if(isNaN(input)){
+//                 console.log("Not a valid number. Try again.");
+//         continue;
+//     }
+
+//     if(n === 0){
+//         console.log("stopping loop");
+//         break;
+//     }
+
+//     console.log("hello");
+
+//  } while (input !== 0)
+
+// guess the number 
+
+// // Generate an integer between 1 and 100
+// const random = Math.floor(Math.random() * 100) + 1;
+// // console.log("Target number :", random);
+
+// let attempts = 0;
+
+// while (true) {
+//   let rawInput = prompt("Guess the number between 1 and 100:");
+
+//   // 1. User clicked Cancel
+//   if (rawInput === null) {
+//     console.log("Game cancelled.");
+//     break;
+//   }
+
+//   // 2. User entered empty text or spaces
+//   const trimmed = rawInput.trim();
+//   if (trimmed === "") {
+//     console.log("Please enter a number, not empty spaces.");
+//     continue;
+//   }
+
+//   // 3. Convert and validate NaN
+//   const guess = Number(trimmed);
+//   if (Number.isNaN(guess)) {
+//     console.log("Invalid input. Please enter a valid number.");
+//     continue;
+//   }
+
+//   // 4. Validate range
+//   if (guess < 1 || guess > 100) {
+//     console.log("Out of bounds! Enter a number between 1 and 100.");
+//     continue;
+//   }
+
+//   attempts++;
+
+  // 5. Compare guess with target
+//   if (guess > random) {
+//     console.log("Too high, try again!");
+//   } else if (guess < random) {
+//     console.log("Too low, try again!");
+//   } else {
+//     console.log(`Congratulations! You won in ${attempts} attempts! The number was ${random}.`);
+//     break;
+//   }
+// }
+
+
 
 
 
