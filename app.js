@@ -606,41 +606,41 @@
 
 // sasta calculator 
 
-let cont;
+// let cont;
 
-do {
-  let pr = Number(
-    prompt(
-      "Enter what do you want to do: \n 1 for sum \n 2 for subtract \n 3 for multiply \n 4 for divide"
-    )
-  );
+// do {
+//   let pr = Number(
+//     prompt(
+//       "Enter what do you want to do: \n 1 for sum \n 2 for subtract \n 3 for multiply \n 4 for divide"
+//     )
+//   );
 
-  if (pr >= 1 && pr <= 4) {
-    let a = Number(prompt("Enter first number (a):"));
-    let b = Number(prompt("Enter second number (b):"));
+//   if (pr >= 1 && pr <= 4) {
+//     let a = Number(prompt("Enter first number (a):"));
+//     let b = Number(prompt("Enter second number (b):"));
 
-    if (pr === 1) {
-      console.log(`Result: ${a + b}`);
-    } else if (pr === 2) {
-      console.log(`Result: ${a - b}`);
-    } else if (pr === 3) {
-      console.log(`Result: ${a * b}`);
-    } else if (pr === 4) {
-      if (b === 0) {
-        console.log("Cannot divide by zero!");
-      } else {
-        console.log(`Result: ${a / b}`);
-      }
-    }
-  } else {
-    console.log("Invalid input! Please choose between 1 and 4.");
-  }
+//     if (pr === 1) {
+//       console.log(`Result: ${a + b}`);
+//     } else if (pr === 2) {
+//       console.log(`Result: ${a - b}`);
+//     } else if (pr === 3) {
+//       console.log(`Result: ${a * b}`);
+//     } else if (pr === 4) {
+//       if (b === 0) {
+//         console.log("Cannot divide by zero!");
+//       } else {
+//         console.log(`Result: ${a / b}`);
+//       }
+//     }
+//   } else {
+//     console.log("Invalid input! Please choose between 1 and 4.");
+//   }
 
-  cont = prompt("Do you want to continue? Type 'yes':").toLowerCase();
+//   cont = prompt("Do you want to continue? Type 'yes':").toLowerCase();
 
-} while (cont === "yes");
+// } while (cont === "yes");
 
-console.log("Calculator closed.");
+// console.log("Calculator closed.");
 
 
 
