@@ -590,7 +590,7 @@
 //     console.log("Out of bounds! Enter a number between 1 and 100.");
 //     continue;
 //   }
-  
+
 //   attempts++;
 
 //   // 5. Compare guess with target
@@ -642,8 +642,112 @@
 
 // console.log("Calculator closed.");
 
+// process.stdout.write("hello ");
+// process.stdout.write("world");
+
+// output - "hello world"
+
+// let prompt = require("prompt-sync")();
+// let n = Number(prompt("Enter a number "));
+// for( i = 1 ; i<=n ; i++){
+//     for(let j = 1 ; j<=n ; j++){
+//         process.stdout.write("* ");
+//     }
+//     console.log();
+// }
+
+// console.log("*")
+
+// process.stdout.write("* ")
+
+// right angle triangle
+
+// let prompt = require("prompt-sync")();
+// let n = Number(prompt("Enter a number "));
+// for( i = 1 ; i<=n ; i++){
+//     for(let j = 1 ; j<=i ; j++){
+//         process.stdout.write("* ");  
+//     }
+//     console.log();
+// }
+
+// 1
+// 1 2
+// 1 2 3
+// 1 2 3 4
+// 1 2 3 4 5
+
+// let prompt = require("prompt-sync")();
+// let n = Number(prompt("Enter a number "));
+// for( i = 1 ; i<=n ; i++){
+//     for(let j = 1 ; j<=i ; j++){
+//         process.stdout.write(`${j}`);
+//     }
+//     console.log();
+// }
 
 
+// A
+// AB
+// ABC
+// ABCD
+// ABCDE
 
 
+// let prompt = require("prompt-sync")();
 
+// let n = Number(prompt("Enter a number "));
+
+// for (let i = 1; i <= n; i++) {
+
+//     for (let j = 1; j <= i; j++) {
+
+//         process.stdout.write(`${String.fromCharCode(96 + j).toUpperCase()} `);
+
+//     }
+
+//     console.log();
+// }
+
+// Inverted right pattern:
+
+// *****
+// ****
+// ***
+// **
+// *
+
+// let prompt = require("prompt-sync")();
+// let n = Number(prompt("Enter a number "));
+// for( let i = 1 ; i<=n ; i++){
+//     for(let j = 1 ; j<= n-i + 1 ; j++){
+//         process.stdout.write("* ");  
+//     }
+//     console.log();
+// }
+
+
+// mirror right angle triangle 
+
+// let prompt = require("prompt-sync")();
+// let n = Number(prompt("Enter a number "));
+// for( let i = 1 ; i<=n ; i++){
+//     for(let j = 1 ; j<= n-i ; j++){
+//         process.stdout.write(" ");  
+
+//     }
+//     for(let k = 1 ; k<=i ; k++){
+//         process.stdout.write("*");  
+//     }
+
+//     console.log();
+// }
+
+// *       *
+//   *   * 
+//     *
+//   *   *
+// *       *
+
+
+//  
