@@ -903,6 +903,8 @@
 
 // console.log(arr)
 
+// negative value left  side and postive value right side
+
 // let arr = [-25, 42, -7, 0, 18, -3, 99, -14, 5, -88];
 
 // let i = 0 , j = 0;
@@ -913,9 +915,14 @@
 //         arr[i] = arr[j];
 //         arr[j] = temp;
 //         j++
+//     } else if(arr[i] == 0){
+//         let temp = arr[j]
+//         arr[j] = arr[i]
+//         arr[i] = temp
 //     }
 //     i++
 // }
 
 // console.log(arr)
+
 
