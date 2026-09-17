@@ -844,7 +844,7 @@
 
 //
 
-// let arr = [34, 54, 53 , 78 , 45 , 46 , 23 , 16  , 90 , 44 , 49 , 99, 180];
+// let arr = [34, 54, 53 , 78 , 45 , 46 , 23 , 16  , 90 , 44 , 49 , 99, 99];
 
 // let max = Math.max(arr[0] , arr[1]);// 54
 // let smax = Math.min(arr[0] , arr[1]);// 34
@@ -853,10 +853,69 @@
 //     if(max < arr[i]){
 //         smax = max ;
 //         max = arr[i]
-//     } else if(smax < arr[i]){
+//     } else if(smax < arr[i] && max !== arr[i]){
 //         smax = arr[i];
 //     }
 // }
 
 // console.log(smax);
 // console.log(max);
+
+// let arr = [10 , 20 , 30 , 40 , 50 , 54];
+// let temp = new Array(arr.length);
+
+// let j = 0 
+// for(let i = arr.length-1; i>=0; i--){
+//     temp[j] =  arr[i];
+//     j++
+// }
+
+// console.log(temp);
+
+// let arr = [10 , 20 , 30 , 40 , 50];
+
+// let i = 0 , j = arr.length-1
+
+// while(i < j){
+//     let temp = arr[i]
+//     arr[i] = arr[j]
+//     arr[j] = temp
+//     i++
+//     j--
+// }
+
+// console.log(arr);
+
+
+// let arr = [0, 1, 0 ,1 ,1 ,0, 0, 1, 1 ,0];
+
+// let i = 0 , j = 0;
+
+// while(i < arr.length){
+//     if(arr[i] == 0 ){
+//         let temp = arr[i];
+//         arr[i] = arr[j];
+//         arr[j] = temp;
+//         j++
+//     }
+//     i++
+// }
+
+// console.log(arr)
+
+// let arr = [-25, 42, -7, 0, 18, -3, 99, -14, 5, -88];
+
+// let i = 0 , j = 0;
+
+// while(i < arr.length){
+//     if(arr[i] < 0 ){
+//         let temp = arr[i];
+//         arr[i] = arr[j];
+//         arr[j] = temp;
+//         j++
+//     }
+//     i++
+// }
+
+// console.log(arr)
+
