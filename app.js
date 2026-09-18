@@ -929,7 +929,7 @@
 // left rotation by 1 element 
 
 // let arr = [1 , 2, 3, 4, 5];
- 
+
 // let copy = arr[0];
 
 // for(let i = 0; i< arr.length - 1 ; i++){
@@ -943,15 +943,75 @@
 
 // right rotation by 1 element 
 
-let arr = [1 , 2, 3, 4, 5];
+// let arr = [1 , 2, 3, 4, 5];
+
+// let copy = arr[arr.length - 1] ;
+
+// for(let i = arr.length - 1; i>0 ; i--){
+//         arr[i] = arr[i - 1];
+// } 
+
+// arr[0] = copy
+
+// console.log(arr)
+
+// left rotation by k element
+
+// let k = Number(prompt("Enter the number of k:"))
+// let arr = [1, 2, 3, 4, 5];
+
+
+// for (let i = 1; i <= k%arr.length; i++) {
+//         let copy = arr[0];
+//         for (let j = 0; j < arr.length - 1; j++) {
+//                 arr[j] = arr[j + 1];
+//         }
+//         arr[arr.length - 1] = copy
+// }
+
+// console.log(arr)
+
+
+// right rotation by k element 
+// let k = Number(prompt("Enter the number of k:"))
+
+// let arr = [1, 2, 3, 4, 5];
+
+// for (let i = 0; i < k % arr.length; i++) {
+
+//         let copy = arr[arr.length - 1];
+
+//         for (let i = arr.length - 1; i > 0; i--) {
+//                 arr[i] = arr[i - 1];
+//         }
+
+//         arr[0] = copy
+// }
+
+// console.log(arr)
+
+// optimize way of this 
+
+// let k = Number(prompt("Enter the number of k: "))
+
+// let arr = [1, 2, 3, 4, 5]
+// let temp = new Array(arr.length)
+// k = k%arr.length
+
+// for(let i = 0; i<arr.length; i++){
+//         temp[i] = arr[(i+k)%arr.length]
+// }
+
+// console.log(temp)
+
+let k = Number(prompt("Enter the number of k: "))
+
+let arr = [1, 2, 3, 4, 5]
+let temp = new Array(arr.length)
+k = k%arr.length
+
+for(let i = 0; i<arr.length; i++){
+        temp[(i+k)%arr.length] = arr[i]
+}
  
-let copy = arr[arr.length - 1] ;
-
-for(let i = arr.length - 1; i>0 ; i--){
-        arr[i] = arr[i - 1];
-} 
-
-arr[0] = copy
-
-console.log(arr)
-
+console.log(temp)
