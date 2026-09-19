@@ -1004,14 +1004,75 @@
 
 // console.log(temp)
 
-let k = Number(prompt("Enter the number of k: "))
+// let k = Number(prompt("Enter the number of k: "))
 
-let arr = [1, 2, 3, 4, 5]
-let temp = new Array(arr.length)
-k = k%arr.length
+// let arr = [1, 2, 3, 4, 5]
+// let temp = new Array(arr.length)
+// k = k%arr.length
 
-for(let i = 0; i<arr.length; i++){
-        temp[(i+k)%arr.length] = arr[i]
-}
- 
-console.log(temp)
+// for(let i = 0; i<arr.length; i++){
+//         temp[(i+k)%arr.length] = arr[i]
+// }
+
+// console.log(temp)
+
+// reverse array using function for left rotation
+
+// let arr = [1,2,3,4,5];
+// let k = Number(prompt("Enter a value"))
+// k = k%arr.length
+// reverse(0 , k-1)
+// reverse(k , arr.length-1)
+// reverse(0 , arr.length-1)
+// console.log(arr)
+
+// function reverse(i,j){
+//         while(i<j){
+//                 let temp = arr[i]
+//                 arr[i] = arr[j]
+//                 arr[j] = temp
+//                 i++
+//                 j--
+//         }
+// }
+
+// reverse array using function for right rotation
+
+// let arr = [1,2,3,4,5];
+// let k = Number(prompt("Enter a value"))
+// k = k%arr.length
+// reverse(0 , arr.length-1)
+// reverse(0 , k-1)
+// reverse(k , arr.length-1)
+// console.log(arr)
+
+// function reverse(i,j){
+//         while(i<j){
+//                 let temp = arr[i]
+//                 arr[i] = arr[j]
+//                 arr[j] = temp
+//                 i++
+//                 j--
+//         }
+// }
+
+// first leetcode question 
+
+// remove duplicate from sorted array
+
+
+// function removeDuplicates(arr) {
+//         let j = 1;
+//         for (let i = 1; i < arr.length; i++) {
+//                 if (arr[i] !== arr[i - 1]) {
+//                         arr[j] = arr[i];
+//                         j++;
+//                 }
+//         }
+//         return arr.slice(0,j);
+// }
+
+// let arr = [0, 0, 1, 1, 1, 2, 2, 3, 2, 4];
+// let result = removeDuplicates(arr);
+// console.log(result); 
+
