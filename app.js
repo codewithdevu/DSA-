@@ -1076,3 +1076,60 @@
 // let result = removeDuplicates(arr);
 // console.log(result); 
 
+
+// let arr1 = [2,5,6]
+// let arr2 = [1,3,4,8]
+// let merge = new Array(arr1.length + arr2.length);
+// let i = j = k = 0
+// while(i<arr1.length && j<arr2.length){
+//         if(arr1[i]<arr2[j]){
+//                 merge[k++] = arr1[i++]
+//         } else{
+//                 merge[k++] = arr2[j++]
+//         }
+// }
+
+// while(i<arr1.length){
+//         merge[k++] = arr1[i++]
+// }
+
+// while(j<arr2.length){
+//         merge[k++] = arr2[j++]
+// }
+
+
+// console.log(merge)
+
+// let num1 = [1, 2, 3, 0, 0, 0]
+// let num2 = [2, 5, 6]
+// m = 3;
+// n = 2;
+// let merge = new Array(m * n);
+// let i = j = k = 0
+// while (i < num1.length && j < num1.length) {
+//         if (num1[i] < num2[j]) {
+//                 if (num1[i] == 0) {
+//                         i++
+//                 } else if (num2[i] == 0) {
+//                         j++
+//                 } else {
+//                         merge[k++] = num1[i++]
+//                 }
+//         }
+//         else {
+//                 merge[k++] = num2[j++]
+//         }
+// }
+
+// while (i < num1.length) {
+//         merge[k++] = num1[i++]
+// }
+
+// while (j < num2.length) {
+//         merge[k++] = num2[j++]
+// }
+
+
+// console.log(merge)
+
+
