@@ -1100,36 +1100,28 @@
 
 // console.log(merge)
 
-// let num1 = [1, 2, 3, 0, 0, 0]
-// let num2 = [2, 5, 6]
-// m = 3;
-// n = 2;
-// let merge = new Array(m * n);
-// let i = j = k = 0
-// while (i < num1.length && j < num1.length) {
-//         if (num1[i] < num2[j]) {
-//                 if (num1[i] == 0) {
-//                         i++
-//                 } else if (num2[i] == 0) {
-//                         j++
-//                 } else {
-//                         merge[k++] = num1[i++]
-//                 }
+// nums1 = [1,2,3,0,0,0]
+// m = 3
+// nums2 = [2,5,6]
+// n = 3
+
+// let merge = function(nums1, m, nums2, n) {
+//     let i = m - 1;
+//     let j = n - 1;
+//     let k = m + n - 1;
+    
+//     while (j >= 0) {
+//         if (i >= 0 && nums1[i] > nums2[j]) {
+//             nums1[k] = nums1[i];
+//             i--;
+//         } else {
+//             nums1[k] = nums2[j];
+//             j--;
 //         }
-//         else {
-//                 merge[k++] = num2[j++]
-//         }
-// }
 
-// while (i < num1.length) {
-//         merge[k++] = num1[i++]
-// }
+//         k--;
+//     }
+// };
 
-// while (j < num2.length) {
-//         merge[k++] = num2[j++]
-// }
-
-
-// console.log(merge)
-
-
+// merge(nums1, m, nums2, n);
+// console.log(nums1);
