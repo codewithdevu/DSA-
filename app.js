@@ -1125,3 +1125,19 @@
 
 // merge(nums1, m, nums2, n);
 // console.log(nums1);
+ 
+
+// let prices = [7,1,5,3,6,4];
+
+// let maxProfit = function(prices) {
+//     let maxProfit = 0;
+//     let min = prices[0];
+//     for(let i = 0; i<prices.length ; i++){
+//         if(prices[i]< min) min = prices[i]
+//         let profit = prices[i] - min;
+//         maxProfit = Math.max(maxProfit , profit)
+//     }
+//     return maxProfit 
+// };
+
+// console.log(maxProfit(prices));
