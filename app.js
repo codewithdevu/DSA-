@@ -1140,4 +1140,22 @@
 //     return maxProfit 
 // };
 
-// console.log(maxProfit(prices));
+// console.log(maxProfit(prices)); 
+
+
+// 122. Best Time to Buy and Sell Stock II
+
+// let prices = [1,2,3,4,5]
+
+// let totalProfit = function(prices){
+//     let totalProfit = 0;
+//     for(let i = 1 ; i<prices.length ; i++){
+//         if(prices[i] > prices[i-1]){
+//             totalProfit += prices[i] - prices[i-1]
+//         }
+//     }
+//     return totalProfit;
+
+// }
+
+// console.log(totalProfit(prices))
