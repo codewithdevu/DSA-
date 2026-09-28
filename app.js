@@ -1109,7 +1109,7 @@
 //     let i = m - 1;
 //     let j = n - 1;
 //     let k = m + n - 1;
-    
+
 //     while (j >= 0) {
 //         if (i >= 0 && nums1[i] > nums2[j]) {
 //             nums1[k] = nums1[i];
@@ -1125,7 +1125,7 @@
 
 // merge(nums1, m, nums2, n);
 // console.log(nums1);
- 
+
 
 // let prices = [7,1,5,3,6,4];
 
@@ -1159,3 +1159,47 @@
 // }
 
 // console.log(totalProfit(prices))
+
+// let arr = [1, 1, 0, 1, 0, 2, 1, 1, 0, 2, 1]
+// let i = 0;       
+// let j = 0;
+// let k = arr.length - 1;
+
+// while (i <= k) {
+//     if (arr[i] == 0) {
+//         let temp = arr[i]
+//         arr[i] = arr[j]
+//         arr[j] = temp
+//         i++
+//         j++
+//     }
+//     else if (arr[i] == 2) {
+//         let temp = arr[i]
+//         arr[i] = arr[k]
+//         arr[k] = temp
+//         k--
+//     }
+//     else {
+//         i++
+//     }
+// }
+
+
+// console.log(arr)
+
+//  Maximum Subarray
+
+// let nums = [-2,1,-3,4,-1,2,1,-5,4]
+
+// let maxSubArray = function(nums) {
+//     let max = -Infinity 
+//     let sum = 0;
+//     for(let i = 0 ; i<nums.length ; i++){
+//         sum += nums[i]
+//         max = Math.max(max , sum)
+//         if(sum<0) sum = 0;
+//     }
+//     return max;
+// };
+
+// console.log(maxSubArray(nums))
