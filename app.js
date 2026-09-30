@@ -1207,48 +1207,48 @@
 
 // Majority Element
 
-let nums = [2,2,1,1,1,2,2]
+// let nums = [2,2,1,1,1,2,2]
 
-let majorityElement = function(nums) {
-    let ans = nums[0]
-    let count = 1;
+// let majorityElement = function(nums) {
+//     let ans = nums[0]
+//     let count = 1;
 
-    for(let i = 1 ; i<nums.length ; i++){
-        if(count == 0){
-        ans = nums[i] 
-        count = 1;
-    }
-        else if(ans == nums[i]) count++
-        else count--
-    }
-    return ans
-};
+//     for(let i = 1 ; i<nums.length ; i++){
+//         if(count == 0){
+//         ans = nums[i] 
+//         count = 1;
+//     }
+//         else if(ans == nums[i]) count++
+//         else count--
+//     }
+//     return ans
+// };
 
-console.log(majorityElement(nums))
+// console.log(majorityElement(nums))
 
 // trapping rain water
 
-let height = [4,2,0,3,2,5]
+// let height = [4,2,0,3,2,5]
 
-let trap = function(height) {
-let left = new Array(height.length)
-let right = new Array(height.length)
-let maxLeft = height[0] , maxRight = height[height.length-1];
-left[0] = maxLeft , right[right.length-1] = maxRight
+// let trap = function(height) {
+// let left = new Array(height.length)
+// let right = new Array(height.length)
+// let maxLeft = height[0] , maxRight = height[height.length-1];
+// left[0] = maxLeft , right[right.length-1] = maxRight
 
-for(let i=1 ; i<height.length ; i++){
-    maxLeft = Math.max(height[i] , maxLeft)
-    left[i] = maxLeft;
-}
-for(let i= height.length - 2 ; i>=0; i--){
-    maxRight = Math.max(height[i] , maxRight)
-    right[i] = maxRight;
-}
-let ans = 0;
-for(let i = 0; i<height.length; i++){
-    ans += Math.min(left[i] , right[i]) - height[i]
-}
-return ans
-};
+// for(let i=1 ; i<height.length ; i++){
+//     maxLeft = Math.max(height[i] , maxLeft)
+//     left[i] = maxLeft;
+// }
+// for(let i= height.length - 2 ; i>=0; i--){
+//     maxRight = Math.max(height[i] , maxRight)
+//     right[i] = maxRight;
+// }
+// let ans = 0;
+// for(let i = 0; i<height.length; i++){
+//     ans += Math.min(left[i] , right[i]) - height[i]
+// }
+// return ans
+// };
 
-console.log(trap(height))
+// console.log(trap(height))
