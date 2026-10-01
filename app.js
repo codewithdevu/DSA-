@@ -1252,3 +1252,75 @@
 // };
 
 // console.log(trap(height))
+
+// string
+
+let s = "sheryians"
+let st = "naman"
+console.log(s.length);
+console.log(s.slice(1,5)) // negative and positive both
+console.log(s.substring(1,5))
+console.log(s.toUpperCase(1,5))
+console.log(s.concat(" world"))
+console.log(("     world     ").trim())
+console.log(s.indexOf("y"))
+console.log(s.lastIndexOf("s"))
+console.log(s.includes("hery"))
+console.log(s.startsWith("sher"))
+console.log(s.endsWith("ians"))
+let str = "apple apple apple";
+console.log(str.replace("apple", "mango"))
+console.log(str.replaceAll("apple" , "mango"))
+console.log(s.split(""))
+console.log(s.charAt(5))
+console.log(s.charCodeAt(5))
+let rev = "";
+
+// for(let i = st.length - 1 ; i>=0 ; i--){
+//     rev += st.charAt(i)
+// }
+// if(rev == st) console.log("pallindrome")
+// else console.log("no pallindrome")
+
+// let ispallindrome = true;
+
+// let i = 0 , j = st.length - 1;
+
+// while(i<j){
+//     if(st.charAt(i) !== st.charAt(j)){
+//         ispallindrome = false;
+//         break;
+//     }
+//     i++
+//     j--
+// }
+
+// if(ispallindrome) console.log("pallindrome")
+// else console.log("no pallindrome")
+
+
+// let toggle = "";
+// let di = "ABCDEfghij"
+
+// for(let i = 0 ; i<di.length ; i++){
+//     let ch = di.charCodeAt(i);
+
+//     if(ch >= 65 && ch <= 90){
+//         toggle += String.fromCharCode(ch + 32)
+//     } else if(ch >= 97 && ch <= 122){
+//         toggle += String.fromCharCode(ch - 32)
+//     }
+// }
+
+// console.log(toggle)
+
+let sh = "aabcab"
+
+let arr = new Array(128).fill(0);
+
+for(let i = 0 ; i<sh.length ; i++){
+    let ch = sh.charCodeAt(i);
+    arr[ch]++
+}
+
+console.log(arr)
