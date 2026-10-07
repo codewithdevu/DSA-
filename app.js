@@ -1258,9 +1258,9 @@
 let s = "sheryians"
 let st = "naman"
 console.log(s.length);
-console.log(s.slice(1,5)) // negative and positive both
-console.log(s.substring(1,5))
-console.log(s.toUpperCase(1,5))
+console.log(s.slice(1, 5)) // negative and positive both
+console.log(s.substring(1, 5))
+console.log(s.toUpperCase(1, 5))
 console.log(s.concat(" world"))
 console.log(("     world     ").trim())
 console.log(s.indexOf("y"))
@@ -1270,7 +1270,7 @@ console.log(s.startsWith("sher"))
 console.log(s.endsWith("ians"))
 let str = "apple apple apple";
 console.log(str.replace("apple", "mango"))
-console.log(str.replaceAll("apple" , "mango"))
+console.log(str.replaceAll("apple", "mango"))
 console.log(s.split(""))
 console.log(s.charAt(5))
 console.log(s.charCodeAt(5))
@@ -1328,3 +1328,59 @@ let rev = "";
 //         console.log(String.fromCharCode(i) + " : " + arr[i])
 //     }
 // }
+
+// Bubble sort 
+
+// let arr = [5, 2, 9, 1, 5, 6];
+
+// let n = arr.length;
+
+// for (let i = 0; i < n - 1; i++) {
+//     for (let j = 0; j < n - i - 1; j++) {
+//         if (arr[j] > arr[j + 1]) {
+//             let temp = arr[j];
+//             arr[j] = arr[j + 1];
+//             arr[j + 1] = temp;
+//         }
+//     }
+// }
+
+// console.log(arr);
+
+// selection sort
+
+// let arr = [64, 25, 12, 22, 11];
+// let n = arr.length;
+
+// for (let i = 0; i < n - 1; i++) {
+//     let minIndex = i;
+//     for (let j = i + 1; j < n; j++) {
+//         if (arr[j] < arr[minIndex]) {
+//             minIndex = j;
+//         }
+//     }
+//     if (minIndex !== i) {
+//         let temp = arr[i];
+//         arr[i] = arr[minIndex];
+//         arr[minIndex] = temp;
+//     }
+// }
+
+// console.log(arr);
+
+
+// insertion sort 
+
+let arr = [10, 5, 1, 8, 13, 7];
+let n = arr.length;
+
+for (let i = 1; i < n; i++) {
+    let key = arr[i];
+    let j = i - 1;
+    while (j >= 0 && arr[j] > key) {
+        arr[j + 1] = arr[j];
+        j--;
+    }
+    arr[j + 1] = key;
+}
+console.log(arr);
