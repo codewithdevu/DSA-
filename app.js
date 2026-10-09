@@ -1425,3 +1425,48 @@
 // }
 
 // console.log(fact(5)); // 5 * fact(4) => 5 * 4 * fact(3) => 5 * 4 * 3 * fact(2) => 5 * 4 * 3 * 2 * fact(1) => 5 * 4 * 3 * 2 * 1 = 120
+
+// fibonacci series using recursion
+
+// let n = 10; // Number of terms in the Fibonacci series
+//     process.stdout.write(0 + " " + 1 + " "); // Print the first two terms
+//     fibonTerms(n - 2, 0, 1); // Call the recursive function for the remaining terms
+
+
+// function fibonTerms(n , first , second) {
+//     if(n == 0) return;
+//     let third = first + second;
+//     process.stdout.write(third + " ");
+//     fibonTerms(n-1 , second , third);
+    
+// }
+// console.log()
+
+// //
+
+// function fibonacci(n) {
+//     if (n == 0) return 0;
+//     if (n == 1) return 1;
+//     let third = fibonacci(n - 1) + fibonacci(n - 2);
+//     return third;
+// }   
+
+// console.log(fibonacci(6)); // 6th fibonacci number is 8
+
+
+// function gcd(a, b) {
+//     if(a == b) return a;
+//     return a> b ? gcd(a-b , b) : gcd(a , b-a)
+// }
+
+// console.log(gcd(32, 20))
+
+// gcd of 32 and 20 is 4. the function uses recursion to find the gcd by repeatedly subtracting the smaller number from the larger number until both numbers are equal, at which point that number is the gcd. 
+
+
+// function gcdOptimized(a, b) {
+//     if (b === 0) return a;
+//     return gcdOptimized(b, a % b);
+// }
+
+// console.log(gcdOptimized(20, 32))
