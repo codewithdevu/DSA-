@@ -1255,26 +1255,26 @@
 
 // string
 
-let s = "sheryians"
-let st = "naman"
-console.log(s.length);
-console.log(s.slice(1, 5)) // negative and positive both
-console.log(s.substring(1, 5))
-console.log(s.toUpperCase(1, 5))
-console.log(s.concat(" world"))
-console.log(("     world     ").trim())
-console.log(s.indexOf("y"))
-console.log(s.lastIndexOf("s"))
-console.log(s.includes("hery"))
-console.log(s.startsWith("sher"))
-console.log(s.endsWith("ians"))
-let str = "apple apple apple";
-console.log(str.replace("apple", "mango"))
-console.log(str.replaceAll("apple", "mango"))
-console.log(s.split(""))
-console.log(s.charAt(5))
-console.log(s.charCodeAt(5))
-let rev = "";
+// let s = "sheryians"
+// let st = "naman"
+// console.log(s.length);
+// console.log(s.slice(1, 5)) // negative and positive both
+// console.log(s.substring(1, 5))
+// console.log(s.toUpperCase(1, 5))
+// console.log(s.concat(" world"))
+// console.log(("     world     ").trim())
+// console.log(s.indexOf("y"))
+// console.log(s.lastIndexOf("s"))
+// console.log(s.includes("hery"))
+// console.log(s.startsWith("sher"))
+// console.log(s.endsWith("ians"))
+// let str = "apple apple apple";
+// console.log(str.replace("apple", "mango"))
+// console.log(str.replaceAll("apple", "mango"))
+// console.log(s.split(""))
+// console.log(s.charAt(5))
+// console.log(s.charCodeAt(5))
+// let rev = "";
 
 // for(let i = st.length - 1 ; i>=0 ; i--){
 //     rev += st.charAt(i)
@@ -1384,3 +1384,44 @@ let rev = "";
 //     arr[j + 1] = key;f
 // }
 // console.log(arr);
+
+
+// recursion 
+
+// memory -> stack -> return key word
+
+// function func(n) {
+//     if(n==0) return ;
+//     func(n-1)
+//     console.log(n)
+// }
+
+// func(5)
+
+// this is how recursion works. it is a function that calls itself. it has a base case that stops the recursion. in this case, the base case is when n is equal to 0. when n is equal to 0, the function returns and does not call itself again. otherwise, it calls itself with n-1 and then prints n after the recursive call returns. this results in printing the numbers from 1 to 5 in ascending order.
+
+// print natural numbers using recursion
+
+// function printNaturalNumbers(n) {
+//     if (n === 0) return;
+//     console.log(n);
+//     printNaturalNumbers(n-1);
+// }
+
+// printNaturalNumbers(10);
+
+// sum using recursion
+
+// function sum(n) {
+//     if (n === 1) return n;
+//     return n + sum(n - 1);  
+// }
+
+// console.log(sum(5)); // 5 + sum(4) => 5 + 4 + sum(3) => 5 + 4 + 3 + sum(2) => 5 + 4 + 3 + 2 + sum(1) => 5 + 4 + 3 + 2 + 1 = 15
+
+// function fact(n) {
+//     if (n === 1) return n;
+//     return n * fact(n - 1);  
+// }
+
+// console.log(fact(5)); // 5 * fact(4) => 5 * 4 * fact(3) => 5 * 4 * 3 * fact(2) => 5 * 4 * 3 * 2 * fact(1) => 5 * 4 * 3 * 2 * 1 = 120
