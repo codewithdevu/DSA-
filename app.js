@@ -1438,7 +1438,7 @@
 //     let third = first + second;
 //     process.stdout.write(third + " ");
 //     fibonTerms(n-1 , second , third);
-    
+
 // }
 // console.log()
 
@@ -1486,3 +1486,33 @@
 //         if(n/i != i) process.stdout.write(n/i + " ");
 //     }
 // }
+
+// let n = 30; 
+
+// let arr = new Array(n+1).fill(true);
+
+// for(let i = 2; i <= Math.floor(Math.sqrt(n)); i++) {
+//     if(arr[i] == true) {
+//         for(let j = i*i; j <= n; j += i) {
+//             arr[j] = false;
+//         }
+//     }
+// }
+
+// for(let i = 2; i <= n; i++) {
+//     if(arr[i] == true) {
+//         process.stdout.write(i + " ");
+//     }
+// }
+
+// let x = 2, n = 6;
+
+// function power(x, n) {
+//     if (n === 0) return 1;
+//     answer = power(x, Math.floor(n / 2));
+//     if (n % 2 === 0) return answer * answer;
+//     else return answer * answer * x;
+// }
+
+// console.log(power(x, n)); // 64
+
