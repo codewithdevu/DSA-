@@ -1516,3 +1516,27 @@
 
 // console.log(power(x, n)); // 64
 
+// binary search 
+
+// let arr = [2, 5, 8, 9, 12, 18, 20, 25, 30, 67, 101, 125];
+
+// let target = 18;
+
+// function binarySearch() {
+//     let first = 0;
+//     let last = arr.length - 1;
+//     while (first <= last) {
+//         let mid = Math.floor((first + last) / 2);
+//         if (arr[mid] === target) {
+//             return mid; // Target found at index mid
+//         } else if (arr[mid] < target) {
+//             first = mid + 1; // Search in the right half
+//         } else {
+//             last = mid - 1; // Search in the left half
+//         }
+//     }
+//     console.log("Target not found in the array.");
+//     return -1; // Target not found
+// }
+
+// console.log(binarySearch(arr, target)); // Output: 8 (index of target 30)
