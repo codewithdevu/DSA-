@@ -1675,32 +1675,50 @@
 
 // find all disapperared Array 
 
-let nums = [4, 3, 2, 7, 8, 2, 3, 1];
+// let nums = [4, 3, 2, 7, 8, 2, 3, 1];
 
-let findDisappearedNumbers = function (nums) {
-    let temp = new Array();
-    let i = 0;
-    while (i < nums.length) {
-        let correctIndex = nums[i] - 1;
-        if (nums[i] !== nums[correctIndex]) {
-            swap(nums, i, correctIndex);
-        } else {
-            i++;
-        }
-    }
+// let findDisappearedNumbers = function (nums) {
+//     let temp = new Array();
+//     let i = 0;
+//     while (i < nums.length) {
+//         let correctIndex = nums[i] - 1;
+//         if (nums[i] !== nums[correctIndex]) {
+//             swap(nums, i, correctIndex);
+//         } else {
+//             i++;
+//         }
+//     }
 
-    for (let i = 0; i < nums.length; i++) {
-        if (nums[i] !== i + 1) {
-            temp.push(i + 1);
-        }
-    }
-    return temp;
-}
+//     for (let i = 0; i < nums.length; i++) {
+//         if (nums[i] !== i + 1) {
+//             temp.push(i + 1);
+//         }
+//     }
+//     return temp;
+// }
 
-let swap = function (nums, i, j) {
-    let temp = nums[i];
-    nums[i] = nums[j];
-    nums[j] = temp;
-}
+// let swap = function (nums, i, j) {
+//     let temp = nums[i];
+//     nums[i] = nums[j];
+//     nums[j] = temp;
+// }
 
-console.log(findDisappearedNumbers(nums)); // Output: [5, 6]
+// console.log(findDisappearedNumbers(nums)); // Output: [5, 6]
+
+// search insert position
+
+// let nums = [1, 3, 5, 6];
+// let target = 7;
+// console.log(searchInsert(nums, target)); // Output: 4
+
+// function searchInsert(nums, target) {
+//     let first = 0;
+//     let last = nums.length - 1;
+//     while(first<=last){
+//         let mid = Math.floor((first + last)/2);
+//         if(nums[mid] === target) return mid;
+//         else if(nums[mid] <  target) first = mid+1;
+//         else if(nums[mid]> target) last = mid-1;
+//     }
+//     return first ;
+// };
