@@ -1540,3 +1540,44 @@
 // }
 
 // console.log(binarySearch(arr, target)); // Output: 8 (index of target 30)
+
+// merge sort 
+
+
+// function mergeSort(arr , first, last, mid) {
+//     let temp = new Array(last - first + 1);
+//     let i = first, j = mid + 1, k = 0;
+//     while (i <= mid && j <= last) {
+//         if (arr[i] <= arr[j]) {
+//             temp[k++] = arr[i++];
+//         } else {
+//             temp[k++] = arr[j++];
+//         }
+//     }
+//     while (i <= mid) {
+//         temp[k++] = arr[i++];
+//     }
+//     while (j <= last) {
+//         temp[k++] = arr[j++];
+//     }
+    
+//     let index = 0 , start = first;
+//     while (index < temp.length) {
+//         arr[start++] = temp[index++];
+//     }
+// }
+
+// function divide(arr, first, last) {
+//     if (first >= last) return;
+//         let mid = Math.floor((first + last) / 2);
+//         divide(arr, first, mid);
+//         divide(arr, mid + 1, last);
+//         mergeSort(arr, first, last, mid);
+    
+// }
+
+// let arr = [ 8, 2, 1, 9, 5, 12, 4, 20];
+// divide(arr, 0, arr.length - 1);
+// console.log(arr);
+
+
