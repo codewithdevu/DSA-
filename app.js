@@ -1615,3 +1615,59 @@
 // let arr = [8, 2, 1, 9, 5, 12, 4, 20];
 // quickSort(arr, 0, arr.length - 1);
 // console.log(arr);
+
+
+// Cyclic sort 
+
+// let arr = [5, 3, 1, 7, 2, 8, 4, 6 ]; // 1-8
+// cyclicSort(arr);
+// console.log(arr);
+
+// function cyclicSort(arr) {
+//     let i = 0;
+//     while (i < arr.length) {
+//         let correctIndex = arr[i] - 1;
+//         if (arr[i] !== arr[correctIndex]) {
+//             swap(arr, i, correctIndex);
+//         } else {
+//             i++;
+//         }
+//     }
+// }
+
+// function swap(arr, i, j) {
+//     let temp = arr[i];
+//     arr[i] = arr[j];
+//     arr[j] = temp;
+// }
+
+// 233. missing number
+
+// let arr = [3, 0, 1];
+// let missing = missingNumber(arr);
+// console.log(missing);
+
+// function missingNumber(arr) {
+//     let i = 0;
+//     while (i < arr.length) {
+//         let correctIndex = arr[i];  
+//         if (correctIndex < arr.length && arr[i] !== arr[correctIndex]) {
+//             swap(arr, i, correctIndex);
+//         } else {
+//             i++;
+//         }
+//     }
+
+//     for (let i = 0; i < arr.length; i++) {
+//         if (arr[i] !== i) {
+//             return i; // Missing number found
+//         }
+//     }
+//     return arr.length; // If no missing number found, return the next expected number
+// }
+
+// function swap(arr, i, j) {
+//     let temp = arr[i];
+//     arr[i] = arr[j];
+//     arr[j] = temp;
+// }
