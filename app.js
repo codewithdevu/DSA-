@@ -1560,7 +1560,7 @@
 //     while (j <= last) {
 //         temp[k++] = arr[j++];
 //     }
-    
+
 //     let index = 0 , start = first;
 //     while (index < temp.length) {
 //         arr[start++] = temp[index++];
@@ -1573,7 +1573,7 @@
 //         divide(arr, first, mid);
 //         divide(arr, mid + 1, last);
 //         mergeSort(arr, first, last, mid);
-    
+
 // }
 
 // let arr = [ 8, 2, 1, 9, 5, 12, 4, 20];
@@ -1591,7 +1591,7 @@
 //     while (i <= j) {
 //         while (i <= last && arr[i] <= pivot) i++;
 //         while (j > first && arr[j] > pivot) j--;
-        
+
 //         if (i < j) swap(arr, i, j);
 //     }
 //     swap(arr,  j, first);
@@ -1671,3 +1671,36 @@
 //     arr[i] = arr[j];
 //     arr[j] = temp;
 // }
+
+
+// find all disapperared Array 
+
+let nums = [4, 3, 2, 7, 8, 2, 3, 1];
+
+let findDisappearedNumbers = function (nums) {
+    let temp = new Array();
+    let i = 0;
+    while (i < nums.length) {
+        let correctIndex = nums[i] - 1;
+        if (nums[i] !== nums[correctIndex]) {
+            swap(nums, i, correctIndex);
+        } else {
+            i++;
+        }
+    }
+
+    for (let i = 0; i < nums.length; i++) {
+        if (nums[i] !== i + 1) {
+            temp.push(i + 1);
+        }
+    }
+    return temp;
+}
+
+let swap = function (nums, i, j) {
+    let temp = nums[i];
+    nums[i] = nums[j];
+    nums[j] = temp;
+}
+
+console.log(findDisappearedNumbers(nums)); // Output: [5, 6]
