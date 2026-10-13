@@ -1722,3 +1722,32 @@
 //     }
 //     return first ;
 // };
+
+// search in rotated sorted array
+
+// let nums = [4, 5, 6, 7, 0, 1, 2];
+// let target = 0;
+// console.log(search(nums, target)); // Output: 4
+
+// function search(nums, target) {
+//     let first = 0;
+//     let last = nums.length - 1;
+//     while (first <= last) {
+//         let mid = Math.floor((first + last) / 2);
+//         if (nums[mid] === target) return mid;
+//         if (nums[first] <= nums[mid]) {
+//             if (target >= nums[first] && target < nums[mid]) {
+//                 last = mid - 1;
+//             } else {
+//                 first = mid + 1;
+//             }
+//         } else {
+//             if (target >= nums[mid] && target <= nums[last]) {
+//                 first = mid + 1;
+//             } else {
+//                 last = mid - 1;
+//             }   
+//         }
+//     }
+//     return -1;
+// };
