@@ -1792,3 +1792,35 @@
 //     return first;
 // }
 
+      
+// koko eating bananas
+
+// let piles = [3, 6, 7, 11];
+// let h = 8;
+
+// function minEatingSpeed(piles, h) {
+//     let first = 1;
+//     let last = Math.max(...piles);
+//     let ans = last;
+//     while (first <= last) {
+//         let mid = Math.floor((first + last) / 2);
+//         if (canEatAll(piles, h, mid)) {
+//             ans = mid;
+//             last = mid - 1;
+//         } else {
+//             first = mid + 1;
+//         }   
+//     }
+//     return ans;
+// }   
+
+// function canEatAll(piles, h, speed) {
+//     let hours = 0;
+//     for(let i = 0; i < piles.length; i++) {
+//         hours += Math.ceil(piles[i] / speed);
+//     }
+//     if(hours <= h) return true;
+//     return false;
+// }   
+
+// console.log(minEatingSpeed(piles, h)); // Output: 4
