@@ -1751,3 +1751,44 @@
 //     }
 //     return -1;
 // };
+
+// allocate minimum number of pages
+
+// let arr = [2, 5, 7, 3, 8];
+// let k = 2;
+// console.log(allocateMinimumPages(arr, k)); // Output: 60
+
+// function isPossible(arr, k, mid) {
+//     let studentCount = 1;
+//     let pageSum = 0;
+//     for(let i = 0 ; i<arr.length ; i++){
+//         if(pageSum + arr[i] > mid){
+//             studentCount++;
+//             pageSum = arr[i];
+//             if(studentCount > k) return false;
+//         } else{
+//             pageSum += arr[i];
+//         }
+//     }
+//     return true ;
+// }
+
+// function allocateMinimumPages(arr, k) {
+//     if(k > arr.length) return -1;
+//     let first = 0 , last = 0;
+//     for(let i = 0 ; i<arr.length ; i++){
+//         first = Math.max(first , arr[i]);
+//         last += arr[i];
+//     } 
+//     while(first < last){
+//         let mid = Math.floor((first + last)/2);
+//         if(isPossible(arr , k , mid)){
+//             ans = mid;
+//             last = mid-1;
+//         } else{
+//             first = mid + 1;
+//         }
+//     }
+//     return first;
+// }
+
