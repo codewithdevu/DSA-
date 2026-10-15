@@ -1824,3 +1824,83 @@
 // }   
 
 // console.log(minEatingSpeed(piles, h)); // Output: 4
+
+// hashing 
+
+// set data structure in javascript
+
+// let set = new Set();
+// set.add(1);
+// set.add(2);
+// set.add(3);
+// set.add(4);
+// set.add(5);
+// set.add(2); // Duplicate value, will not be added
+// console.log(set);
+// set.delete(4);
+// console.log(set);
+// console.log(set.size);
+// console.log(set.has(3));
+
+// for(let a of set){
+//     console.log(a);
+// }
+
+// let arr = [10, 45, 18, 9, 9, 10, 45, 10, 10];
+
+// let set = new Set(arr);
+
+// for(let i = 0; i<arr.length ; i++){
+//     if(set.has(arr[i])){
+//         set.delete(arr[i])
+//     }else set.add(arr[i])
+// }
+
+// console.log(set)
+
+
+
+// let sentence = "The quick brown fox jumps over the lazy dog and quickly amaze everyone";
+
+// function checkIfPangram(sentence) {
+//     let set = new Set();
+
+//     sentence = sentence.trim().toLowerCase();
+
+//     for (let i = 0; i < sentence.length; i++) {
+//         let ch = sentence.charAt(i);
+
+//         if (ch >= 'a' && ch <= 'z') {
+//             set.add(ch);
+//         }
+//     }
+
+//     return set.size === 26;
+// }
+
+// console.log(checkIfPangram(sentence));
+
+// map -> store different type of data 
+
+// let map = new Map();
+
+// map.set("name", "divyansh");
+// map.set("name", "devu");
+// map.set("age" , 20);
+// map.set("isPassed" , true);
+
+// console.log(map.size);
+
+
+// for(let [key , value] of map){
+//     console.log(`${key} -> ${value}`);
+// }
+
+// console.log("keyssssss");
+// for(let key of map.keys()){
+//     console.log(key);
+// }
+// console.log("valuessssss");
+// for(let value of map.values()){
+//     console.log(value);
+// }
