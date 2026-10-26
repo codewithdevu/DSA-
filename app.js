@@ -1904,3 +1904,40 @@
 // for(let value of map.values()){
 //     console.log(value);
 // }
+
+// let arr = [10, 3, 5, 6, 10, 1, 3, 5, 5, 7];
+// let map = new Map();
+ 
+// for(let i = 0 ; i<arr.length ; i++){
+//     if(map.has(arr[i])){
+//         map.set(arr[i] , map.get(arr[i]) + 1)
+//     }else{
+//         map.set(arr[i] , 1);
+//     }
+// }
+
+// console.log(map);
+
+// sort the people 
+
+// let names = ["mary" , "john" , "emaa"];
+// let height = [180, 165, 170]
+
+// let sortPeople = function(names, height) {
+//     let map = new Map();
+
+// for(let i = 0; i<names.length; i++){
+//     map.set(height[i] , names[i])
+// }
+
+// height.sort((a,b) => b-a);
+
+// for(let i = 0; i<height.length; i++){
+//     names[i] = map.get(height[i])
+// }
+// return names
+
+// };
+
+
+// console.log(sortPeople(names, height))
